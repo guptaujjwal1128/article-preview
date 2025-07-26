@@ -1,9 +1,36 @@
-@mixin text-base {
-  font-size: $font-size-base;
-  font-weight: $font-weight-normal;
-  line-height: $line-height-base;
+@use "variables" as *;
+
+// Typography Mixins (from _variables.scss)
+@mixin text-preset-1 {
+  font-family: $font-family-base;
+  font-size: $text-preset-1-font-size;
+  font-weight: $text-preset-1-font-weight;
+  line-height: $text-preset-1-line-height;
+  letter-spacing: $text-preset-1-letter-spacing;
+}
+@mixin text-preset-2 {
+  font-family: $font-family-base;
+  font-size: $text-preset-2-font-size;
+  font-weight: $text-preset-2-font-weight;
+  line-height: $text-preset-2-line-height;
+  letter-spacing: $text-preset-2-letter-spacing;
+}
+@mixin text-preset-2b {
+  font-family: $font-family-base;
+  font-size: $text-preset-2b-font-size;
+  font-weight: $text-preset-2b-font-weight;
+  line-height: $text-preset-2b-line-height;
+  letter-spacing: $text-preset-2b-letter-spacing;
+}
+@mixin text-preset-3 {
+  font-family: $font-family-base;
+  font-size: $text-preset-3-font-size;
+  font-weight: $text-preset-3-font-weight;
+  line-height: $text-preset-3-line-height;
+  letter-spacing: $text-preset-3-letter-spacing;
 }
 
+// Utility Mixins
 @mixin display-center {
   display: flex;
   justify-content: center;

@@ -1,0 +1,8 @@
+---
+applyTo: "**"
+---
+
+- Use only rem units for spacing, padding, and margin (no px or em).
+- Keep global variables in styles/\_variables directory and mixins in styles/\_mixins file.
+- Do not use !important in styles except for utility classes.
+- Use BEM naming convention for class names.

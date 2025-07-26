@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Explain Code",
+    "description": "Explain the function in simple terms",
+    "inputType": "code",
+    "prompt": "Explain the following code in plain English:\n\n{{code}}"
+  }
+]

@@ -1,0 +1,7 @@
+---
+applyTo: "**"
+---
+
+- Always use explicit types for function parameters and return values.
+- Avoid using any; use unknown or specific types instead.
+- Use PascalCase for types and interfaces, camelCase for variables and functions.

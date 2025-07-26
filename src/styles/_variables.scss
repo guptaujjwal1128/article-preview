@@ -1,44 +1,57 @@
 // Typography
-$font-family-base: sans-serif;
-$font-size-base: 1rem; // 16px
-$font-size-sm: 0.875rem; // 14px
-$font-size-lg: 1.25rem; // 20px
-$font-weight-normal: 400;
+$font-family-base: "Manrope", sans-serif;
 $font-weight-bold: 700;
-$line-height-base: 1.5;
+$font-weight-medium: 500;
+$font-weight-regular: 400;
 
-// Colors
-$color-primary: #2563eb;
-$color-primary-light: #3b82f6;
-$color-primary-dark: #1e40af;
+// Text Preset 1 (Bold)
+$text-preset-1-font-size: 1.25rem; // 20px
+$text-preset-1-font-weight: $font-weight-bold;
+$text-preset-1-line-height: 1.3; // 130%
+$text-preset-1-letter-spacing: 0.25px;
 
-$color-secondary: #64748b;
+// Text Preset 2 (Medium)
+$text-preset-2-font-size: 0.8125rem; // 13px
+$text-preset-2-font-weight: $font-weight-medium;
+$text-preset-2-line-height: 1.4; // 140%
+$text-preset-2-letter-spacing: 0.12px;
 
-$color-background: #f8fafc;
+// Text Preset 2 (Bold)
+$text-preset-2b-font-size: 0.8125rem; // 13px
+$text-preset-2b-font-weight: $font-weight-bold;
+$text-preset-2b-line-height: 1.4; // 140%
+$text-preset-2b-letter-spacing: 0.12px;
 
-$color-text: #1e293b;
-$color-text-light: #64748b;
+// Text Preset 3 (Regular)
+$text-preset-3-font-size: 0.8125rem; // 13px
+$text-preset-3-font-weight: $font-weight-regular;
+$text-preset-3-line-height: 1.4; // 140%
+$text-preset-3-letter-spacing: 0.25px;
 
-$color-border: #e2e8f0;
+// Colors (from Figma Design System)
+$color-white: #ffffff;
+$color-grey-900: #48556a;
+$color-grey-500: #6e8098;
+$color-grey-400: #9daec2;
+$color-grey-200: #ecf2f8;
 
-$color-error: #ef4444;
-$color-success: #22c55e;
-$color-warning: #facc15;
-
-// Spacing (use multiples of 0.25rem = 4px)
-$space-50: 0.25rem; // 4px
-$space-100: 0.5rem; // 8px
-$space-150: 0.75rem; // 12px
-$space-200: 1rem; // 16px
-$space-300: 1.5rem; // 24px
-$space-400: 2rem; // 32px
-$space-600: 3rem; // 48px
+// Spacing (rem units only)
+$spacing-0: 0rem;
+$spacing-200: 1rem;
+$spacing-300: 1.5rem;
+$spacing-400: 2rem;
+$spacing-500: 2.5rem;
+$spacing-600: 3rem;
+$spacing-700: 3.5rem;
+$spacing-800: 4rem;
+$spacing-1300: 6.5rem;
+$spacing-2000: 10rem;
 
 // Border radius
 $radius-sm: 10px;
 $radius-md: 20px;
 $radius-lg: 30px;
 
-// Shadows
+// Shadows (use Figma shadow values if available)
 $shadow-sm: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
 $shadow-md: 0 4px 8px 0 rgba(16, 24, 40, 0.08);
