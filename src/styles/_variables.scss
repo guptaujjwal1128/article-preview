@@ -10,6 +10,11 @@ $text-preset-1-font-weight: $font-weight-bold;
 $text-preset-1-line-height: 1.3; // 130%
 $text-preset-1-letter-spacing: 0.25px;
 
+// Breakpoints
+$breakpoint-mobile: 480px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1280px;
+
 // Text Preset 2 (Medium)
 $text-preset-2-font-size: 0.8125rem; // 13px
 $text-preset-2-font-weight: $font-weight-medium;
