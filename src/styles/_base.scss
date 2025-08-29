@@ -1,27 +1,2 @@
 @use "variables" as *;
 @use "mixins" as *;
-
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-@include mobile {
-  body {
-    background-color: blue;
-  }
-}
-
-@include tablet {
-  body {
-    background-color: green;
-  }
-}
-
-@include desktop {
-  body {
-    background-color: red;
-  }
-}

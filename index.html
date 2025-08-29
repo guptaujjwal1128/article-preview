@@ -1,38 +1,97 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend Mentor | Article preview component</title>
 
-    <meta
-      name="description"
-      content="Frontend Mentor | Article preview component"
-    />
-    <style></style>
-  </head>
-  <body>
-    <main>
-      Shift the overall look and feel by adding these wonderful touches to
-      furniture in your home Ever been in a room and felt like something was
-      missing? Perhaps it felt slightly bare and uninviting. I’ve got some
-      simple tips to help you make any room feel complete. Michelle Appleton 28
-      Jun 2020 Share
-    </main>
-    <footer>
-      <div class="attribution">
-        Challenge by
-        <a
-          href="https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT"
-          target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a href="https://www.frontendmentor.io/profile/guptaujjwal1128"
-          >Ujjwal Gupta</a
-        >.
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Mentor | Article preview component</title>
+  <meta name="description" content="Frontend Mentor | Article preview component" />
+  <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet" />
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <article class="article-preview">
+      <div class="article-preview__img-container">
+        <img src="/src/assets/images/drawers.jpg" alt="Furniture with small decorations" />
       </div>
-    </footer>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+      <div class="article-preview__content">
+        <h2 class="article-preview__title">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h2>
+        <span class="article-preview__description">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </span>
+        <div class="article-preview__footer">
+          <section class="article-preview__author">
+            <div class="article-preview__author__img-container">
+              <img src="/src/assets/images/avatar-michelle.jpg" alt="" class="article-preview__author__img" />
+            </div>
+            <div class="article-preview__author__info">
+              <p class="article-preview__author__name">Michelle Appleton</p>
+              <time datetime="2020-06-28" class="article-preview__author__date">28 Jun 2020 </time>
+            </div>
+          </section>
+          <div class="article-preview__share">
+            <button class="article-preview__share-btn" aria-label="Share Article" aria-describedby="share-tooltip">
+              <img src="/src/assets/images/icon-share.svg" class="article-preview__share-btn-img" alt="Share" />
+            </button>
+            <div id="share-tooltip" class="article-preview__share-dialog" role="tooltip">
+              <span class="article-preview__share-dialog__text">share</span>
+
+              <nav class="article-preview__share-dialog__nav">
+                <ul class="article-preview__share-dialog__nav-list">
+                  <li class="article-preview__share-dialog__nav-list-item">
+                    <a aria-label="Share on Facebook" class="article-preview__share-dialog__nav-facebook" href="#">
+                      <img class="article-preview__share-dialog__nav-facebook-img"
+                        src="/src/assets/images/icon-facebook.svg" alt="" />
+                    </a>
+                  </li>
+                  <li class="article-preview__share-dialog__nav-list-item">
+                    <a aria-label="Share on Twitter" class="article-preview__share-dialog__nav-twitter" href="#">
+                      <img class="article-preview__share-dialog__nav-twitter-img"
+                        src="/src/assets/images/icon-twitter.svg" alt="" />
+                    </a>
+                  </li>
+                  <li class="article-preview__share-dialog__nav-list-item">
+                    <a aria-label="Share on Pinterest" class="article-preview__share-dialog__nav-pinterest" href="#">
+                      <img class="article-preview__share-dialog__nav-pinterest-img"
+                        src="/src/assets/images/icon-pinterest.svg" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT" target="_blank"
+        rel="noopener noreferrer">Frontend Mentor</a>. Coded by
+      <a href="https://www.frontendmentor.io/profile/guptaujjwal1128" rel="noopener noreferrer">Ujjwal Gupta</a>.
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
